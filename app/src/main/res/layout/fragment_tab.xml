@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.c0nnector.github.paradise.ui.home.tabs.TabView
+    android:id="@+id/tabView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.c0nnector.github.paradise.ui.home.tabs.TabFragment">
+
+    <io.c0nnector.github.least.LeastView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/progressBar"
+        android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+</io.c0nnector.github.paradise.ui.home.tabs.TabView>

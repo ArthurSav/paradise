@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--todo - Define your angelist apitoken here-->
+    <!--Visit https://angel.co/api to get your key and then define it here-->
+    <string name="token_angelist_api"></string>
+
+    <!--todo - add contact email used to send feedback-->
+    <string name="contact_email"></string>
+
+</resources>

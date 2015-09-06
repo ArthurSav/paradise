@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.c0nnector.github.paradise.ui.person.PersonDetailsView
+    android:id="@+id/vPersonView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/vPersonHeader"
+        layout="@layout/part_person_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/vFounded"
+        style="@style/RoleContainerStyle"
+        tools:layout_height="150dp"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_border_bottom_white_background"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Founder of"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp"/>
+
+        <io.c0nnector.github.least.LeastView
+            android:id="@+id/foundedLeastView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vInvested"
+        style="@style/RoleContainerStyle"
+        tools:layout_height="150dp"
+        tools:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_border_bottom_white_background"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Invested in"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp"/>
+
+        <io.c0nnector.github.least.LeastView
+            android:id="@+id/investedLeastView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnInvestedAll"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/btnInvestedAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"
+            android:text="see all"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/accent"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/vAdvisor"
+        style="@style/RoleContainerStyle"
+        tools:layout_height="150dp"
+        tools:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_border_bottom_white_background"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Advistor at"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp"/>
+
+        <io.c0nnector.github.least.LeastView
+            android:id="@+id/advisorLeastView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnAdvisorAll"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/btnAdvisorAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="5dp"
+            android:text="see all"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/accent"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+
+</io.c0nnector.github.paradise.ui.person.PersonDetailsView>

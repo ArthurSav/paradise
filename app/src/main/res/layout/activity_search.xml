@@ -1,0 +1,78 @@
+<io.c0nnector.github.paradise.ui.search.SearchView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.c0nnector.github.paradise.ui.search.ActivitySearch"
+    android:background="#99000000"
+    android:id="@+id/vContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape_search_view_background"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:id="@+id/vSearchContainer"
+        tools:visibility="visible"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            tools:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/vSearchBoxContainer"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/txtSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_vertical"
+                android:hint="Search for a person, startup..."
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/btnClose"
+                android:layout_toStartOf="@+id/btnClose"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnClose"
+                android:src="@drawable/ic_close_grey_500_24dp"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_search_leastview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+</io.c0nnector.github.paradise.ui.search.SearchView>

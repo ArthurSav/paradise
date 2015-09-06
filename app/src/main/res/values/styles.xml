@@ -1,0 +1,57 @@
+<resources>
+
+    <style name="ParadiseTheme" parent="ParadiseTheme.Base"/>
+
+    <style name="ParadiseTheme.Transparent" parent="ParadiseTheme.Transparent.Base"/>
+
+    <!--Main Theme-->
+
+    <style name="ParadiseTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/grey_900</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowBackground">@color/white</item>
+
+        <item name="colorControlHighlight">@color/grey_400</item>
+
+        <item name="alertDialogTheme">@style/AlertDialogCustom</item>
+
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+
+    </style>
+
+
+
+    <!--Transparent activity-->
+
+    <style name="ParadiseTheme.Transparent.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <!--Transparent activity fullscreen-->
+
+    <style name="ParadiseTheme.TransparentActivity.FullScreen" parent="ParadiseTheme.Transparent">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--Alert Dialog with white background-->
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!--Oveflow menu style-->
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <!-- Required for pre-Lollipop. -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4.0dip</item>
+    </style>
+
+
+</resources>

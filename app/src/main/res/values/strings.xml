@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Paradise</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_main_activity">Paradise</string>
+    <string name="title_activity_activity_startup">Name</string>
+    <string name="title_activity_activity_screenshot">ActivityScreenshot</string>
+    <string name="title_activity_activity_person">Person</string>
+    <string name="title_activity_activity_search">Search</string>
+    <string name="title_activity_launcher">Splash</string>
+
+    <string name="message_error_no_api_token">You need to setup an api token first.\nCheckout tokens.xml for info</string>
+
+</resources>

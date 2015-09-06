@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.c0nnector.github.paradise.ui.home.MainView
+    android:id="@+id/mainView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/red_300">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_900"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="@dimen/main_toolbar_elevation">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:elevation="@dimen/main_toolbar_elevation"
+                app:expandedTitleGravity="top|left"
+                app:expandedTitleTextAppearance="@style/ToolbarTextExpanded"
+                app:collapsedTitleTextAppearance="@style/ToolbarTextExpanded"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+
+                <io.c0nnector.github.paradise.ui.views.ToolbarMain
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    tools:background="@color/grey_800">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Startups"
+                        android:id="@+id/txtToolbarTitle"
+                        android:textSize="28dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-black"/>
+
+                    </io.c0nnector.github.paradise.ui.views.ToolbarMain>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                style="@style/StartupsTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                app:tabIndicatorColor="@color/accent"
+                app:tabIndicatorHeight="2dp"/>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</io.c0nnector.github.paradise.ui.home.MainView>

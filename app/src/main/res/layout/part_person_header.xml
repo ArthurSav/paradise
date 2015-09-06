@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.c0nnector.github.paradise.ui.person.PersonHeaderView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <io.c0nnector.github.paradise.ui.views.UrlImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        tools:background="@color/grey_300"/>
+
+    <TextView
+        android:id="@+id/txtBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtUsername"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp"
+        android:visibility="visible"
+        tools:text="Founder @CoachUp. Investor in 30+ startups"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgAvatar"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-bold"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
+        android:visibility="gone"
+        tools:text="John Stewart"/>
+
+    <LinearLayout
+        android:id="@+id/vSecondaryInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBio"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_location_on_grey_600_18dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:text="San Fransisco"
+            tools:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_label_grey_600_18dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:text="investor"
+            tools:visibility="visible"
+            />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/includeSocialButtons"
+        layout="@layout/part_social_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSecondaryInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"/>
+
+</io.c0nnector.github.paradise.ui.person.PersonHeaderView>

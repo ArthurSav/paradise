@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:minLines="5"
+        android:hint="Say hi or report a bug..."
+        android:gravity="left|top"
+        android:background="@drawable/shape_feedback_background"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+</RelativeLayout>

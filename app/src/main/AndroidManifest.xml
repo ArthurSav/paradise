@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.c0nnector.github.paradise" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="io.c0nnector.github.paradise.application.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_black_yellow"
+        android:label="@string/app_name"
+        android:theme="@style/ParadiseTheme" >
+        <activity
+            android:name="io.c0nnector.github.paradise.ui.LauncherActivity"
+            android:label="@string/title_main_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.c0nnector.github.paradise.ui.home.MainActivity"
+            android:label="Startups" >
+        </activity>
+        <activity
+            android:name="io.c0nnector.github.paradise.ui.startup.ActivityStartupDetails"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="io.c0nnector.github.paradise.ui.screenshot.ActivityScreenshot"
+            android:label="@string/title_activity_activity_screenshot"
+            android:theme="@style/ParadiseTheme.TransparentActivity.FullScreen" >
+        </activity>
+        <activity
+            android:name="io.c0nnector.github.paradise.ui.person.ActivityPersonDetails"
+            android:label="Person" >
+        </activity>
+        <activity
+            android:name="io.c0nnector.github.paradise.ui.search.ActivitySearch"
+            android:label="@string/title_activity_activity_search"
+            android:theme="@style/ParadiseTheme.Transparent">
+        </activity>
+
+    </application>
+
+</manifest>
