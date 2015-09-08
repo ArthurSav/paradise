@@ -1,7 +1,8 @@
 # Paradise
 Paradise is an app to search for startups and angel investors. It uses the angelist api.
-
-
+<br>
+<br>
+<br>
 
 <a href="https://play.google.com/store/apps/details?id=io.c0nnector.github.paradise">
   <img alt="Get it on Google Play"
