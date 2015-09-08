@@ -1,5 +1,5 @@
 # Paradise
-Paradise is an app to search for startups and angel investors. It uses the angelist api.
+Paradise is an app where you can search for startups and angel investors. It uses the angelist api.
 <br>
 <br>
 <br>
