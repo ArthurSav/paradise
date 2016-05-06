@@ -4,10 +4,7 @@ Paradise is an app where you can search for startups and angel investors. It use
 <br>
 <br>
 
-<a href="https://play.google.com/store/apps/details?id=io.c0nnector.github.paradise">
-  <img alt="Get it on Google Play"
-       src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
-</a>
+<a href='https://play.google.com/store/apps/details?id=io.c0nnector.github.paradise&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="200"/></a>
 
 <img src="https://lh3.googleusercontent.com/RSCRKNDNNWuWLnNA_hfzZzQwuMR4DLqD3i7j3_Jpz-k7VFHo6ZK45AGQLKTOObcHVw=h900" width="200">
 <img src="https://lh3.googleusercontent.com/kx85kuWBmxCL00lJ--IT6peEDGdBmbmqcvVWulpXYRolpDY2gjkfUYjrNu3_lm2BVw=h900" width="200">
